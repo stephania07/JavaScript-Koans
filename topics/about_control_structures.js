@@ -48,7 +48,7 @@ test("switch", function() {
 			result = 2;
 			break;
 	}
-	equal(1+1, result, 'what is the value of result?');
+	equal(2, result, 'what is the value of result?');
 });
 
 test("switch default case", function() {

@@ -14,10 +14,10 @@ test("equality without type coercion", function() {
 });
 
 test("equality with type coercion", function() {
-    ok(3 == "__", 'what string is equal to 3, with type coercion?');
+    ok(3 == "3", 'what string is equal to 3, with type coercion?');
 });
 
 test("string literals", function() {
-    equal(__, "frankenstein", "quote types are interchangable, but must match.");
-    equal(__, 'frankenstein', "quote types can use both single and double quotes.");
+    equal("frankenstein", "frankenstein", "quote types are interchangable, but must match.");
+    equal("frankenstein", 'frankenstein', "quote types can use both single and double quotes.");
 });

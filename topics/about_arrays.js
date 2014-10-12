@@ -8,7 +8,7 @@ test("array literal syntax and indexing", function() {
 });
 
 test("array type", function() {
-    equal(string, typeof([]), 'what is the type of an array?');
+    equal("object", typeof([]), 'what is the type of an array?');
 });
 
 test("length", function() {
@@ -19,7 +19,7 @@ test("length", function() {
 test("splice", function() {
     var daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     var workingWeek = daysOfWeek.splice(0, 5);
-    ok(workiingWeek.equalTo([4]), 'what is the value of workingWeek?');
+    ok(workingWeek.equalTo(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", ""]), 'what is the value of workingWeek?');
     ok(daysOfWeek.equalTo([6]), 'what is the value of daysOfWeek?');
 });
 

@@ -19,5 +19,5 @@ test("equality with type coercion", function() {
 
 test("string literals", function() {
     equal("frankenstein", "frankenstein", "quote types are interchangable, but must match.");
-    equal("frankenstein", 'frankenstein', "quote types can use both single and double quotes.");
+    equal('frankenstein', 'frankenstein', "quote types can use both single and double quotes.");
 });

@@ -10,7 +10,7 @@ test("delimiters", function() {
 test("concatenation", function() {
     var fruit = "apple";
     var dish = "pie";
-    equal(apple pie, fruit + " " + dish, 'what is the value of fruit + " " + dish?');
+    equal("apple pie", fruit + " " + dish, 'what is the value of fruit + " " + dish?');
 });
 
 test("character Type", function() {

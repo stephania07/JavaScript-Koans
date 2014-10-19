@@ -7,7 +7,7 @@ test("defining functions directly", function() {
         result = "b";
     };
     changeResult();
-    equal(b, result, 'what is the value of result?');
+    equal("b", result, 'what is the value of result?');
 });
 
 test("assigning functions to variables", function() {
@@ -72,6 +72,6 @@ test("using apply to invoke function",function(){
     //function and and array of arguments to be passed into the called function.
     var result = invokee.apply("I am this!", ["I am arg1","I am arg2"]);
         
-    equal("I am this!I am arg1I am arg2"]), result, "what will the value of invokee's this be?");
+    equal("I am this!I am arg1I am arg2", result, "what will the value of invokee's this be?");
 });
 

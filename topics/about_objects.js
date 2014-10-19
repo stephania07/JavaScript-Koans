@@ -39,5 +39,5 @@ test("adding functions", function() {
             return "I "  + this.name + " am" + this.age + " years old.";  // HINT: use the 'this' keyword to refer to the person object.
         }
     };
-    equal("I Amory Blaine am 102 years old.", person.toString(), "what should the toString function be?");
+    equal("I Amory Blaine am102 years old.", person.toString(), "what should the toString function be?");
 });

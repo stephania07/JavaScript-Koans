@@ -2,7 +2,7 @@ module("About Arrays (topics/about_arrays.js)");
 
 test("array literal syntax and indexing", function() {
     var favouriteThings = ["cellar door", 42, true]; // note that array elements do not have to be of the same type
-    equal(cellar door, favouriteThings[0], 'what is in the first position of the array?');
+    equal("cellar door", favouriteThings[0], 'what is in the first position of the array?');
     equal(42, favouriteThings[1], 'what is in the second position of the array?');
     equal(true, favouriteThings[2], 'what is in the third position of the array?');
 });
@@ -19,8 +19,8 @@ test("length", function() {
 test("splice", function() {
     var daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     var workingWeek = daysOfWeek.splice(0, 5);
-    ok(workingWeek.equalTo(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", ""]), 'what is the value of workingWeek?');
-    ok(daysOfWeek.equalTo([6]), 'what is the value of daysOfWeek?');
+    ok(workingWeek.equalTo(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']), 'what is the value of workingWeek?');
+    ok(daysOfWeek.equalTo(['Saturday', 'Sunday']), 'what is the value of daysOfWeek?');
 });
 
 test("stack methods", function() {

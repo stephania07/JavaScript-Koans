@@ -16,6 +16,6 @@ test("variables declared inside of a function", function() {
         equal("inner", innerVariable, 'is innerVariable defined in this scope?');
     })();
 
-    equal(true, outerVariable, 'is outerVariable defined in this scope?');
+    equal("outer", outerVariable, 'is outerVariable defined in this scope?');
     equal("undefined", typeof(innerVariable), 'is innerVariable defined in this scope?');
 });

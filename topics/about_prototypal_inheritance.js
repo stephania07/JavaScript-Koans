@@ -26,7 +26,7 @@ Mammal.prototype.favouriteSaying = function() {
 
 test("more functions", function() {
     var bobby = new Mammal("Bobby");
-    equal("Bobby's favorite saying is 'Hello, my name is Bobby'", bobby.favouriteSaying(), "what is Bobby's favourite saying?"); 
+    equal("Bobby's favourite saying is Hello, my name is Bobby", bobby.favouriteSaying(), "what is Bobby's favourite saying?"); 
 });
 
 test("calling functions added to a prototype after an object was created", function() {
@@ -57,5 +57,5 @@ extend(Bat, Mammal);
 test("Inheritance", function() {
     var lenny = new Bat("Lenny", "1.5m");
     equal("Hello, my name is Lenny", lenny.sayHi(), "what does Lenny say?");
-    equal(1.5, lenny.wingspan, "what is Lenny's wingspan?");
+    equal("1.5m", lenny.wingspan, "what is Lenny's wingspan?");
 });

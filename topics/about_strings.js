@@ -15,12 +15,12 @@ test("concatenation", function() {
 
 test("character Type", function() {
     var characterType = typeof("Amory".charAt(1)); // typeof will be explained in about reflection
-    equal(string, characterType, 'Javascript has no character type');
+    equal("string", characterType, 'Javascript has no character type');
 });
 
 test("escape character", function() {
     var stringWithAnEscapedCharacter  = "\u0041pple";
-    equal("u0041pple", stringWithAnEscapedCharacter, 'what  is the value of stringWithAnEscapedCharacter?');
+    equal("Apple", stringWithAnEscapedCharacter, 'what  is the value of stringWithAnEscapedCharacter?');
 });
 
 test("string.length", function() {
@@ -30,5 +30,5 @@ test("string.length", function() {
 
 test("slice", function() {
     var fruit = "apple pie";
-    equal(apple, fruit.slice(0,5), 'what is the value of fruit.slice(0,5)?');
+    equal("apple", fruit.slice(0,5), 'what is the value of fruit.slice(0,5)?');
 });
